@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Banco</title>
+</head>
+<body>
+    <main>
+
+        <section>
+
+            <h1 class="titulo">Simulador de tipo de cambio</h1>
+            
+            <form id="formulario">
+                
+                <p>¿En que tipo de moneda desea convertir sus pesos?</p>
+                
+                <input type="radio" name="cambio" id="uno">Dolar
+                
+                <input type="radio" name="cambio" id="dos">Euro
+                
+                <p>Ingrese monto a convertir:</p>
+                
+                <input type="number" id="valor">
+                
+                <input type="button" id="cotizador" value="Cotizar" class="btn" onclick="convertir()">
+                
+            </form>
+            
+        </section>
+
+        <section> 
+
+            
+            <h2 class="titulo">Simulador de números primos</h2>
+            <form id="formularioDos">
+                
+                <p>En esta seccion le diremos si el numero que ingreso es primo o no</p>
+                
+                <label for="numero">Ingrese un numero:</label>
+                
+                <input type="number" id="num">
+                
+                <input type="button" id="numPrimos" value="Verificar" class="btn" onclick="primos()">
+                
+            </form>
+            
+        </section>
+
+        <section>
+
+            <h3 class="titulo">Simulador de descuentos</h3>
+            
+            <form id="formularioTres">
+                
+                <p>En esta sección podras simular los descuentos</p>
+                
+                <label for="numero">Monto inicial:</label>
+                
+                <input type="number" id="monto_inicial" name="monto_inicial">
+                
+                <label for="numero">Porcentaje de descuento:</label>
+                
+                <input type="number" id="descuento" name="descuento">
+                
+                <input type="button" id="importeDeDescuento" value="Calcular" class="btn" onclick="Calcular()">
+                
+                
+            </form>
+            
+            
+        </section>
+            
+        
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
